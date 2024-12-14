@@ -9,8 +9,12 @@
         font-size: 2.8rem;
     }
 
+    /* Navbar */
+
     .content_navbar {
         padding: .8rem;
+        background-color: var(--bg-2);
+        top: 0;
     }
 
     .logo_celphone {
@@ -22,23 +26,40 @@
         display: none;
     }
 
-    .robot_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+    /* Inicio */
 
-    .robot {
-        display: flex;
-        padding-left:1rem ;
-        border: yellow 3px solid;
-        /* width: 100%; */
+    .inicio {
+        margin-top: 4rem;
+        flex-direction: column;
+        width: 36rem;
     }
 
     .robot_name {
-        width: 18rem;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .inicio_info p{
         font-size: 1.4rem;
+        text-align: center;
+        padding-top: 1.6rem;
+    }
+
+    .inicio_botones{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2.8rem;
+        /* border: solid red 3px; */
+
+    }
+
+    .robot {
+        display: none;
+    }
+
+    .robot_mobile{
+        display: block;
+        height: 80rem;
     }
 
 }
@@ -52,7 +73,7 @@
         display: none;
     }
 
-    
+
 
 }
 
