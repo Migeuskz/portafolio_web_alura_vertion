@@ -1,0 +1,245 @@
+/* General Reset and Variables */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-1: #021d2d;
+    --bg-2: #021526;
+    --bg-3: #16325B;
+    --blue1: #227B94;
+    --blue2: #78B7D0;
+    --yellow1: #FFDC7F;
+    --yellow2: #E2E2B6;
+    --text1: #fffefb;
+    --text2: #000000;
+    --title: "Archivo Black", sans-serif;
+    --description: "Maven Pro", sans-serif;
+}
+
+body {
+    background-color: var(--bg-1);
+    overflow-x: hidden;
+    font-family: var(--description);
+}
+
+/* Titles and Text */
+h1, h2, h3 {
+    font-family: var(--title);
+    font-size: 2.8rem;
+    color: var(--yellow1);
+}
+
+p {
+    color: var(--yellow2);
+    font-size: 2.4rem;
+    padding-top: .8rem;
+}
+
+/* Navbar */
+.content_navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    position: fixed;
+    background-color: var(--bg-2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+    width: 60%;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--yellow2);
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-bottom: .2rem solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.navbar a:hover {
+    border-bottom-color: var(--yellow2);
+}
+
+.content_navbar img {
+    width: 18rem;
+}
+
+.content_navbar button {
+    border: none;
+    background-color: var(--blue1);
+    border-radius: 2.4rem;
+    color: var(--text1);
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 3.8rem;
+    width: 18rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.content_navbar button:hover {
+    background-color: var(--blue2);
+}
+
+/* Sections */
+.projects, .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.inicio {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio_info, .aboutMe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 50%;
+}
+
+.gitHub, .linkedIn, .project_links a {
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    height: 4.8rem;
+    width: 18rem;
+    padding: .8rem;
+    color: var(--text1);
+    transition: ease .2s;
+}
+
+.gitHub {
+    background: linear-gradient(to right, var(--blue2), var(--yellow1));
+    color: var(--bg-3);
+}
+
+.linkedIn {
+    background-color: var(--blue2);
+}
+
+.linkedIn:hover, .project_links a:hover {
+    background-color: var(--bg-3);
+}
+
+/* About Me */
+.aboutMe {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+}
+
+.secciones {
+    color: var(--yellow2);
+    font-size: 3.6rem;
+}
+
+/* Skills */
+.skills_logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 4.8rem;
+}
+
+.skills_logo svg, .logo_js {
+    height: 12rem;
+    width: 12rem;
+    padding: 1rem;
+}
+
+/* Projects */
+.projects {
+    gap: 5.2rem;
+    margin: 2rem 0 4rem;
+}
+
+.project {
+    width: 60%;
+    border-radius: 1.8rem;
+    display: flex;
+    gap: 1.8rem;
+    box-shadow: 1rem 1rem 1.8rem var(--blue1);
+}
+
+.project_image {
+    width: 42rem;
+    height: 27.2rem;
+    border-radius: 1.2rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+footer h3 {
+    font-size: 2.4rem;
+    color: var(--yellow1);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    .content_navbar img {
+        width: 14rem;
+    }
+
+    .inicio {
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+
+    .inicio_info, .aboutMe_info {
+        width: 90%;
+    }
+
+    .gitHub, .linkedIn, .project_links a {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills_logo {
+        flex-wrap: wrap;
+    }
+}
