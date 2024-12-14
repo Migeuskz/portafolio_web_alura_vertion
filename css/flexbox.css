@@ -10,17 +10,35 @@
     }
 
     .content_navbar {
-        /* border: red 3px solid; */
         padding: .8rem;
     }
 
-    .logo_celphone{
+    .logo_celphone {
         width: 4.8rem;
     }
 
 
     .content_navbar a {
         display: none;
+    }
+
+    .robot_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .robot {
+        display: flex;
+        padding-left:1rem ;
+        border: yellow 3px solid;
+        /* width: 100%; */
+    }
+
+    .robot_name {
+        width: 18rem;
+        font-size: 1.4rem;
     }
 
 }
@@ -33,6 +51,8 @@
     .logo_desktop {
         display: none;
     }
+
+    
 
 }
 

@@ -28,7 +28,13 @@ body {
 }
 
 /* Titles and Text */
-h1, h2, h3 {
+h1{
+    font-size: 4.2rem;
+    font-family: var(--title);
+}
+
+h2,
+h3 {
     font-family: var(--title);
     font-size: 2.8rem;
     color: var(--yellow1);
@@ -40,6 +46,16 @@ p {
     padding-top: .8rem;
 }
 
+main {
+    /* border: solid red 3px; */
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
 /* Navbar */
 .content_navbar {
     width: 100%;
@@ -49,7 +65,7 @@ p {
     height: 8rem;
     position: fixed;
     top: 0;
-    background-color: var(--bg-2);
+    /* background-color: var(--bg-2); */
 }
 
 .navbar {
@@ -78,6 +94,7 @@ p {
     width: 21rem;
     /* border: solid yellow 3px; */
 }
+
 .logo_celphone {
     display: none;
 }
@@ -100,7 +117,8 @@ p {
 }
 
 /* Sections */
-.projects, .skills {
+.projects,
+.skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,16 +131,68 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 2rem;
 }
 
-.inicio_info, .aboutMe_info {
+.inicio_info,
+.aboutMe_info {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
     width: 50%;
 }
 
-.gitHub, .linkedIn, .project_links a {
+.robot_container{
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    height: 500px;
+}
+
+.info_robot{
+    left: 50%; 
+    position: absolute; 
+    top: 0; 
+    transform: translateX(-50%); 
+    border: red 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.info_robot p{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.robot_name{
+    color: var(--yellow1); 
+    /* font-size: 2rem;  */
+    text-align: center; 
+    z-index: 10; 
+    width: 60rem;
+}
+
+
+
+
+.robot {
+    /* width:1000px;
+    height:500px;
+    */
+    padding-top: 9rem;
+    border: green 3px solid;
+    width: 100%; /* Ajusta al tamaño del contenedor */
+    height: 100%; /* Ajusta al tamaño del contenedor */
+    /* border: none;  */
+}
+
+.gitHub,
+.linkedIn,
+.project_links a {
     border-radius: 2.4rem;
     display: flex;
     justify-content: center;
@@ -146,7 +216,8 @@ p {
     background-color: var(--blue2);
 }
 
-.linkedIn:hover, .project_links a:hover {
+.linkedIn:hover,
+.project_links a:hover {
     background-color: var(--bg-3);
 }
 
@@ -173,7 +244,8 @@ p {
     padding: 4.8rem;
 }
 
-.skills_logo svg, .logo_js {
+.skills_logo svg,
+.logo_js {
     height: 12rem;
     width: 12rem;
     padding: 1rem;
@@ -211,4 +283,3 @@ footer h3 {
     font-size: 2.4rem;
     color: var(--yellow1);
 }
-
