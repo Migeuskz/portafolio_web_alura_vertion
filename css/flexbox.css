@@ -16,12 +16,13 @@
         justify-content: center;
         /* padding-top: 4rem; */
         /* gap: 8rem; */
+        margin-top: 2rem;
     }
 
     /* Navbar */
 
     .content_navbar {
-        /* padding: .8rem; */
+        padding: .8rem;
         /* background-color: var(--bg-2); */
         top: 0;
     }
@@ -38,19 +39,18 @@
     /* Inicio */
 
     .inicio {
-        /* border: solid red 3px; */
-        margin-top: 4rem;
         flex-direction: column;
         width: 36rem;
         align-items: center;
-        height: 58rem;
+        height: 54rem;
+        /* border: solid red 3px; */
     }
-
+    
     .robot_name {
         font-size: 2.2rem;
         text-align: center;
     }
-
+    
     .inicio_info p {
         font-size: 1.4rem;
         text-align: center;
@@ -63,22 +63,22 @@
         padding-left: 2.8rem;
         
     }
-
+    
     .robot {
         display: none;
     }
     
     .robot_mobile {
-        /* border: solid red 3px; */
         display: block;
-        height: 80rem;
+        height: 18rem;
     }
 
     /* About Me */
     .aboutMe{
+        /* border: solid red 3px; */
         justify-content: center;
         align-items: center;
-        height: 80rem;
+        height: 60rem;
         width: 36rem;
         flex-direction: column-reverse;
         /* margin-top: 3rem; */
@@ -118,6 +118,26 @@
         height: 14rem;
         border-radius: 1.8rem;
         
+    }
+
+    /* Skills */
+
+    .skills{
+        margin-top: 18rem;
+    }
+
+    .skills_logo {
+        justify-content: center; /* Centra las filas */
+        gap: 1rem; /* Reduce el espacio entre elementos */
+    }
+
+    .skills_logo_tec {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .skills_logo_tec p {
+        font-size: 1rem;
     }
 
 }

@@ -86,6 +86,7 @@ main {
     gap: 3.2rem;
     /* width: 60%; */
     list-style: none;
+    padding-right: 2rem;
     /* border: solid red 3px; */
 }
 
@@ -134,15 +135,10 @@ main {
     font-size: 3.6rem;
 }
 
-.projects,
-.skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem 0;
-}
+/* .projects{} */
 
+
+/* Inicio */
 .inicio {
     height: 80vh;
     display: flex;
@@ -251,12 +247,43 @@ main {
 }
 
 /* Skills */
+.skills {
+    /* border: solid red 3px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    /* width: 80%; */
+    height: 17.4rem;
+    margin-top: 12rem;
+}
+
 .skills_logo {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    padding: 4.8rem;
+    /* width: 80%; */
+    gap: 1.8rem;
+    padding: 4rem 1rem;
+}
+
+.skills_logo_tec{
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid blue 3px; */
+}
+
+.skills_logo_tec p {
+    margin-top: 0.4rem; /* Espacio entre icono y texto */
+    font-size: 1.2rem;
+    color: var(--yellow1);
+    text-align: center;
 }
 
 .skills_logo svg,
