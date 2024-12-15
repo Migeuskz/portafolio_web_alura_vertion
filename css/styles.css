@@ -28,7 +28,7 @@ body {
 }
 
 /* Titles and Text */
-h1{
+h1 {
     font-size: 4.2rem;
     font-family: var(--title);
     color: var(--yellow1);
@@ -49,24 +49,34 @@ p {
 
 main {
     /* border: solid red 3px; */
-    margin-top: 8rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    padding-top: 2rem;
 }
 
 /* Navbar */
 .content_navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
+    height: 8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 8rem;
-    position: fixed;
-    top: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    /* Fondo transparente */
+    z-index: 100;
     /* background-color: var(--bg-2); */
+}
+
+.content_navbar.scrolled {
+    background-color: var(--bg-2); /* Fondo cuando haces scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para el efecto */
 }
 
 .navbar {
@@ -118,6 +128,12 @@ main {
 }
 
 /* Sections */
+
+.secciones {
+    color: var(--yellow2);
+    font-size: 3.6rem;
+}
+
 .projects,
 .skills {
     display: flex;
@@ -138,45 +154,37 @@ main {
     gap: 4rem;
 }
 
-.inicio_info{
+.inicio_info {
     width: 70%;
     padding: 1rem;
     /* border: green 3px solid; */
 }
 
-.inicio_info p{
+.inicio_info p {
     font-size: 2.2rem;
     padding-bottom: 1rem;
 }
 
-.robot_name{
+.robot_name {
     font-size: 2.8rem;
 }
 
-.inicio_botones{
+.inicio_botones {
     display: flex;
     gap: .8rem;
     align-items: center;
     justify-content: space-between;
     /* padding-top: 1.8rem; */
     /* border: solid red 3px; */
-    width:90%;
+    width: 90%;
 }
-
-.aboutMe_info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    width: 50%;
-}
-
 
 .robot {
-    width: 50%; 
-    height: 100%; 
+    width: 50%;
+    height: 100%;
 }
 
-.robot_mobile{
+.robot_mobile {
     display: none;
 }
 
@@ -218,11 +226,28 @@ main {
     align-items: center;
     justify-content: center;
     gap: 4.8rem;
+    margin-top: 6rem;
 }
 
-.secciones {
-    color: var(--yellow2);
-    font-size: 3.6rem;
+.aboutMe_foto {
+    height: 38rem;
+    border-radius: 1.8rem;
+}
+
+.aboutMe_foto_cellphone{
+    display: none;
+}
+
+
+.aboutMe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 50%;
+}
+
+.aboutMe_info p{
+    font-size: 1.6rem;
 }
 
 /* Skills */

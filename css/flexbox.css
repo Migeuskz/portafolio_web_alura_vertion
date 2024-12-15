@@ -9,11 +9,20 @@
         font-size: 2.8rem;
     }
 
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 4rem; */
+        /* gap: 8rem; */
+    }
+
     /* Navbar */
 
     .content_navbar {
-        padding: .8rem;
-        background-color: var(--bg-2);
+        /* padding: .8rem; */
+        /* background-color: var(--bg-2); */
         top: 0;
     }
 
@@ -29,9 +38,12 @@
     /* Inicio */
 
     .inicio {
+        /* border: solid red 3px; */
         margin-top: 4rem;
         flex-direction: column;
         width: 36rem;
+        align-items: center;
+        height: 58rem;
     }
 
     .robot_name {
@@ -39,27 +51,73 @@
         text-align: center;
     }
 
-    .inicio_info p{
+    .inicio_info p {
         font-size: 1.4rem;
         text-align: center;
         padding-top: 1.6rem;
     }
 
-    .inicio_botones{
+    .inicio_botones {
         display: flex;
         flex-direction: column;
         padding-left: 2.8rem;
-        /* border: solid red 3px; */
-
+        
     }
 
     .robot {
         display: none;
     }
-
-    .robot_mobile{
+    
+    .robot_mobile {
+        /* border: solid red 3px; */
         display: block;
         height: 80rem;
+    }
+
+    /* About Me */
+    .aboutMe{
+        justify-content: center;
+        align-items: center;
+        height: 80rem;
+        width: 36rem;
+        flex-direction: column-reverse;
+        /* margin-top: 3rem; */
+    }
+    
+    .aboutMe_info h2{
+        font-size: 2.2rem;
+        padding-left: 1rem;
+    }
+    
+    .aboutMe_info p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+
+    .aboutMe_foto {
+        display: none;
+    }
+    
+    /* .aboutMe_foto {
+        height: 16rem;
+        width: 12rem;
+        border-radius: 1.8rem;
+    } */
+    
+    .aboutMe_foto_cellphone {
+        /* border: solid red 3px; */
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutMe_foto_cellphone img{
+        width: 12rem;
+        height: 14rem;
+        border-radius: 1.8rem;
+        
     }
 
 }
