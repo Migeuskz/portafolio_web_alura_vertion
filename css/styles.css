@@ -47,6 +47,14 @@ p {
     padding-top: .8rem;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem; /* Altura del header */
+    z-index: 1000;
+}
+
 main {
     /* border: solid red 3px; */
     margin-top: 2rem;
@@ -57,6 +65,11 @@ main {
     padding: 1rem;
     padding-top: 2rem;
 }
+
+section {
+    scroll-margin-top: 8rem; /* La misma altura que tu header */
+}
+
 
 /* Navbar */
 .content_navbar {
@@ -135,7 +148,6 @@ main {
     font-size: 3.6rem;
 }
 
-/* .projects{} */
 
 
 /* Inicio */
@@ -222,7 +234,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 4.8rem;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .aboutMe_foto {
@@ -256,7 +268,7 @@ main {
     padding: 4rem 0;
     /* width: 80%; */
     height: 17.4rem;
-    margin-top: 12rem;
+    margin-top: 21rem;
 }
 
 .skills_logo {
@@ -294,27 +306,87 @@ main {
 }
 
 /* Projects */
+/* .projects{} */
+
 .projects {
+    /* border: solid red 3px; */
+    flex-direction: column;
     gap: 5.2rem;
-    margin: 2rem 0 4rem;
+    align-items: center;
+    /* margin-bottom: 4rem; */
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.project_links {
+    display: flex;
+    padding: 1.8rem;
+}
+
+.projects_titulo {
+    width: 100%;
+    /* padding-left: 4rem; */
+    padding-bottom: 3rem;
+    /* border: green solid 3px; */
 }
 
 .project {
-    width: 60%;
+    width: 70rem;
+    height: 20rem;
     border-radius: 1.8rem;
     display: flex;
     gap: 1.8rem;
     box-shadow: 1rem 1rem 1.8rem var(--blue1);
+    margin-bottom: 2.4rem;
 }
 
 .project_image {
-    width: 42rem;
-    height: 27.2rem;
+    width: 30rem;
+    height: 20rem;
     border-radius: 1.2rem;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project_info h3 {
+    font-size: 2.2rem;
+    padding: .6rem;
+}
+
+.project_tags {
+    display: flex;
+    gap: .8rem;
+}
+
+.project p {
+    font-size: 1.4rem;
+    padding: .8rem;
+}
+
+.tag {
+    align-items: center;
+    border-radius: 1.8rem;
+    color: var(--yellow1);
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    justify-content: center;
+    width: 12rem;
+    list-style: none;
+    gap: .8rem;
+    /* background-color: #227B94; */
+}
+
+.tag img {
+    width: 1.8rem;
 }
 
 /* Footer */
 footer {
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,6 +394,6 @@ footer {
 }
 
 footer h3 {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     color: var(--yellow1);
 }
