@@ -541,6 +541,10 @@ section {
     display: block; /* Mostrar cuando haya un error */
 }
 
+.contact_container{
+    width: 50%;
+}
+
 /* Footer */
 footer {
     margin-top: 4rem;
