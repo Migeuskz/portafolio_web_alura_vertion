@@ -522,6 +522,25 @@ section {
     cursor: pointer;
 }
 
+.enviar:disabled{
+    opacity: 0;
+}
+
+/* Errores */
+.error-message {
+    color: var(--yellow2);
+    font-family:  var(--description);
+    padding-bottom: 1rem;
+    /* border: solid green 3px; */
+    width:28rem;
+    font-size: 1rem;
+    display: none; /* Oculto por defecto */
+}
+
+.error-message.visible {
+    display: block; /* Mostrar cuando haya un error */
+}
+
 /* Footer */
 footer {
     margin-top: 4rem;

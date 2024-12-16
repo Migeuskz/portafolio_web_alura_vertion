@@ -394,40 +394,44 @@
             <iframe src='https://my.spline.design/contactprueba-41d6fc5d2251703aac7f16a5dbe31e53/' frameborder='0'
                 class="robot_contact"></iframe>
 
-            <form action="">
+                <form action="#" method="post">
 
-                <h3>Contacto</h3>
-                <p> <span>¿Quieres ponerte en contacto conmigo?</span>
-                    Completa el formulario a continuación y me pondré en contacto contigo lo más pronto posible.</p>
-
-                <div class="contact_form">
-
-                    <div class="input_group">
-                        <input type="text" name="name" id="name" class="input" placeholder="" required>
-                        <label for="name" class="label_dinamic">Nombre</label>
+                    <h3>Contacto</h3>
+                    <p> <span>¿Quieres ponerte en contacto conmigo?</span>
+                        Completa el formulario a continuación y me pondré en contacto contigo lo más pronto posible.</p>
+                
+                    <div class="contact_form">
+                
+                        <span id="error-name" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="text" name="name" id="name" class="input" placeholder=" " required>
+                            <label for="name" class="label_dinamic">Nombre</label>
+                        </div>
+                
+                        <span id="error-email" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="email" name="email" id="email" class="input" placeholder=" " required>
+                            <label for="email" class="label_dinamic">E-mail</label>
+                        </div>
+                
+                        <span id="error-asunto" class="error-message"></span>
+                        <div class="input_group">
+                            <input type="text" name="asunto" id="asunto" class="input" placeholder=" " required>
+                            <label for="asunto" class="label_dinamic">Asunto</label>
+                        </div>
+                
+                        <span id="error-message" class="error-message"></span>
+                        <div class="input_group_message">
+                            <label for="message" class="label">Mensaje</label>
+                            <textarea class="mensaje__texto" name="message" id="message" placeholder=" "></textarea>
+                        </div>
+                
+                        <input type="submit" value="Enviar mensaje" class="enviar" disabled>
+                
                     </div>
-
-                    <div class="input_group">
-                        <input type="email" name="email" id="email" class="input" placeholder="" required>
-                        <label for="email" class="label_dinamic">E-mail</label>
-                    </div>
-
-                    <div class="input_group">
-                        <input type="text" name="asunto" id="asunto" class="input" placeholder="" required>
-                        <label for="name" class="label_dinamic">Asunto</label>
-                    </div>
-
-                    <div class="input_group_message">
-                        <label for="message" class="label">Mensaje</label>
-                        <textarea class="mensaje__texto" name="message" id="message" placeholder=" "></textarea>
-                    </div>
-
-                    <input type="submit" value="Enviar mensaje" class="enviar">
-
-                </div>
-
-
-            </form>
+                
+                </form>
+                
 
         </section>
 
